@@ -5,7 +5,7 @@ Domínio e Contexto do Negócio
 
 O sistema foi projetado para gerenciar as operações diárias de uma Lan House.
 Este estabelecimento foca na conveniência e acessibilidade.
-O negócio sobrevive da venda de horas de internet, serviços de impressão e a organização de pequenos torneios que movimentam a comunidade.
+O negócio sobrevive da venda de horas de internet, serviços de impressão e a organização de torneios que movimentam a comunidade.
 O contexto exige um controle rigoroso de quem está usando cada máquina, o que estão consumindo (balas, refrigerantes, salgadinhos) e quem está devidamente inscrito nos torneios da casa. 
 
 	Descrição das Entidades
