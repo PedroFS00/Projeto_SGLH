@@ -16,7 +16,7 @@ Sessão: Registra o uso do tempo nos computadores.
 
 Computador: Representa as máquinas físicas disponíveis no estabelecimento, quais suas configurações de hardware, e seu status, ex: "Livre", "Ocupado", ou "Manutenção".
 
-Consumo:Entidade que detalha o registro do que foi comprado durante uma permanência na lan house.
+Consumo: Entidade que detalha o registro do que foi comprado durante uma permanência na lan house.
 
 Produto: Itens à venda no balcão: bomboniere (doces), águas, refrigerantes folhas de impressão e etc.
 
