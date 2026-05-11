@@ -3,16 +3,16 @@ Projeto destinado a disciplina de Banco de Dados, onde vamos trabalhar um Sistem
 
 Domínio e Contexto do Negócio
 
-O sistema foi projetado para gerenciar as operações diárias de uma Lan House local.
+O sistema foi projetado para gerenciar as operações diárias de uma Lan House.
 Este estabelecimento foca na conveniência e acessibilidade.
-O negócio sobrevive da venda de horas de internet, serviços de impressão e a organização de pequenos torneios que movimentam a comunidade local.
+O negócio sobrevive da venda de horas de internet, serviços de impressão e a organização de pequenos torneios que movimentam a comunidade.
 O contexto exige um controle rigoroso de quem está usando cada máquina, o que estão consumindo (balas, refrigerantes, salgadinhos) e quem está devidamente inscrito nos torneios da casa. 
 
 	Descrição das Entidades
 	
 Cliente: Representa os frequentadores da lan house. É a entidade central para identificação e histórico.
 
-Sessão: Registra o uso do tempo nos computadores. É onde o "taxímetro" da lan house funciona.
+Sessão: Registra o uso do tempo nos computadores.
 
 Computador: Representa as máquinas físicas disponíveis no estabelecimento, quais suas configurações de hardware, e seu status, ex: "Livre", "Ocupado", ou "Manutenção".
 
