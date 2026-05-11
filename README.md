@@ -28,3 +28,4 @@ Audit_log: Entidade de segurança para rastrear ações no sistema, essencial pa
 
   MODELAGEM (DER)
 
+<img width="1373" height="763" alt="WhatsApp Image 2026-05-10 at 16 08 52" src="https://github.com/user-attachments/assets/6ba624a5-1bf8-462a-a4d8-8667e71e79bb" />
