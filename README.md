@@ -1,6 +1,12 @@
 # Projeto_SGLH
 Projeto destinado a disciplina de Banco de Dados, onde vamos trabalhar um Sistema de Gerenciamento de uma Lan House.
 
+TURMA: ADS2N
+AUTORES: 
+PEDRO CAIO FRANCISCO DA SILVA
+JOÃO VITOR SANTOS SILVA
+ELTON DA SILVA SOARES DE SOUZA
+
 Domínio e Contexto do Negócio
 
 O sistema foi projetado para gerenciar as operações diárias de uma Lan House.
@@ -28,4 +34,10 @@ Audit_log: Entidade de segurança para rastrear ações no sistema, essencial pa
 
   MODELAGEM (DER)
 
-<img width="1373" height="763" alt="WhatsApp Image 2026-05-10 at 16 08 52" src="https://github.com/user-attachments/assets/6ba624a5-1bf8-462a-a4d8-8667e71e79bb" />
+<img width="1408" height="722" alt="MODELO_DER ATUALIZADO" src="https://github.com/user-attachments/assets/a419ca42-637e-459a-983c-ce83196d7de9" />
+
+
+SITE Produzido para auxiliar na gestão da Lan House:
+
+https://corujao1.figma.site/
+
