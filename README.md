@@ -54,16 +54,13 @@ Entidade de segurança responsável pelo rastreamento de ações realizadas no s
 
 # MODELAGEM CONCEITUAL (DER)
 
-<img width="1408" height="722" alt="MODELO_DER ATUALIZADO" src="https://github.com/user-attachments/assets/a419ca42-637e-459a-983c-ce83196d7de9" />
+![DER](./images/modelo_der.jpeg)
 
-
-# SITE Produzido para auxiliar na gestão da Lan House:
-
-https://corujao1.figma.site/
+---
 
 # MODELAGEM LÓGICA (TABELA)
 
-<img width="1297" height="825" alt="Lógico_1" src="https://github.com/user-attachments/assets/0f80ffaa-fe03-40c6-99d3-666f4d439f78" />
+![Modelo Lógico](./images/modelo_lógico.png)
 
 # Normalização do Banco de Dados
 
