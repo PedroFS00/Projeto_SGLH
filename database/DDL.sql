@@ -1,19 +1,16 @@
-# Estrutura Física do Banco de Dados (DDL)
+ESTRUTURA FÍSICA DO BANCO DE DADOS (DDL)
 
-Abaixo estão os comandos SQL responsáveis pela criação das tabelas do sistema.
+ABAIXO ESTÃO OS COMANDOS SQL RESPONSÁVEIS PELA CRIAÇÃO DAS TABELAS DO SISTEMA.
 
-## Criação do Banco de Dados
+CRIAÇÃO DO BANCO DE DADOS
 
-```sql
 CREATE DATABASE LAN_HOUSE;
 USE LAN_HOUSE;
-```
 
----
+-- =====================================================
+-- TABELA CLIENTE
+-- =====================================================
 
-## Tabela CLIENTE
-
-```sql
 CREATE TABLE CLIENTE (
     ID_CLIENTE INT PRIMARY KEY AUTO_INCREMENT,
     NOME VARCHAR(100) NOT NULL,
@@ -24,13 +21,11 @@ CREATE TABLE CLIENTE (
     CONSTRAINT CHK_SEXO_CLIENTE
         CHECK (SEXO IN ('M', 'F', 'O'))
 );
-```
 
----
+-- =====================================================
+-- TABELA TELEFONE
+-- =====================================================
 
-## Tabela TELEFONE
-
-```sql
 CREATE TABLE TELEFONE (
     ID_TELEFONE INT PRIMARY KEY AUTO_INCREMENT,
     NUMERO VARCHAR(15) NOT NULL,
@@ -40,13 +35,11 @@ CREATE TABLE TELEFONE (
     FOREIGN KEY (ID_CLIENTE)
         REFERENCES CLIENTE(ID_CLIENTE)
 );
-```
 
----
+-- =====================================================
+-- TABELA COMPUTADOR
+-- =====================================================
 
-## Tabela COMPUTADOR
-
-```sql
 CREATE TABLE COMPUTADOR (
     ID_COMPUTADOR INT PRIMARY KEY AUTO_INCREMENT,
     STATUS VARCHAR(20) NOT NULL,
@@ -54,13 +47,11 @@ CREATE TABLE COMPUTADOR (
     CONSTRAINT CHK_STATUS_COMPUTADOR
         CHECK (STATUS IN ('LIVRE', 'OCUPADO', 'MANUTENCAO'))
 );
-```
 
----
+-- =====================================================
+-- TABELA HARDWARE
+-- =====================================================
 
-## Tabela HARDWARE
-
-```sql
 CREATE TABLE HARDWARE (
     ID_HARDWARE INT PRIMARY KEY AUTO_INCREMENT,
     PLACA_MAE VARCHAR(50) NOT NULL,
@@ -75,13 +66,11 @@ CREATE TABLE HARDWARE (
     FOREIGN KEY (ID_COMPUTADOR)
         REFERENCES COMPUTADOR(ID_COMPUTADOR)
 );
-```
 
----
+-- =====================================================
+-- TABELA SESSAO
+-- =====================================================
 
-## Tabela SESSAO
-
-```sql
 CREATE TABLE SESSAO (
     ID_SESSAO INT PRIMARY KEY AUTO_INCREMENT,
     ENTRADA DATETIME NOT NULL,
@@ -96,13 +85,11 @@ CREATE TABLE SESSAO (
     FOREIGN KEY (ID_COMPUTADOR)
         REFERENCES COMPUTADOR(ID_COMPUTADOR)
 );
-```
 
----
+-- =====================================================
+-- TABELA TORNEIO
+-- =====================================================
 
-## Tabela TORNEIO
-
-```sql
 CREATE TABLE TORNEIO (
     ID_TORNEIO INT PRIMARY KEY AUTO_INCREMENT,
     CATEGORIA VARCHAR(50) NOT NULL,
@@ -111,13 +98,11 @@ CREATE TABLE TORNEIO (
     CONSTRAINT CHK_STATUS_TORNEIO
         CHECK (STATUS IN ('ABERTO', 'EM_ANDAMENTO', 'FINALIZADO'))
 );
-```
 
----
+-- =====================================================
+-- TABELA FORMA_PAGAMENTO
+-- =====================================================
 
-## Tabela FORMA_PAGAMENTO
-
-```sql
 CREATE TABLE FORMA_PAGAMENTO (
     ID_FORMA_PAGAMENTO INT PRIMARY KEY AUTO_INCREMENT,
     TIPO_PAGAMENTO VARCHAR(20) NOT NULL,
@@ -125,13 +110,11 @@ CREATE TABLE FORMA_PAGAMENTO (
     CONSTRAINT CHK_TIPO_PAGAMENTO
         CHECK (TIPO_PAGAMENTO IN ('PIX', 'DINHEIRO', 'CREDITO', 'DEBITO'))
 );
-```
 
----
+-- =====================================================
+-- TABELA INSCRICAO
+-- =====================================================
 
-## Tabela INSCRICAO
-
-```sql
 CREATE TABLE INSCRICAO (
     ID_INSCRICAO INT PRIMARY KEY AUTO_INCREMENT,
     VALOR DECIMAL(10,2) NOT NULL,
@@ -154,25 +137,21 @@ CREATE TABLE INSCRICAO (
     FOREIGN KEY (ID_FORMA_PAGAMENTO)
         REFERENCES FORMA_PAGAMENTO(ID_FORMA_PAGAMENTO)
 );
-```
 
----
+-- =====================================================
+-- TABELA PRODUTO
+-- =====================================================
 
-## Tabela PRODUTO
-
-```sql
 CREATE TABLE PRODUTO (
     ID_PRODUTO INT PRIMARY KEY AUTO_INCREMENT,
     NOME VARCHAR(50) NOT NULL,
     DATA_VALIDADE DATE NOT NULL
 );
-```
 
----
+-- =====================================================
+-- TABELA CONSUMO
+-- =====================================================
 
-## Tabela CONSUMO
-
-```sql
 CREATE TABLE CONSUMO (
     ID_CONSUMO INT PRIMARY KEY AUTO_INCREMENT,
     NOME VARCHAR(50) NOT NULL,
@@ -190,13 +169,11 @@ CREATE TABLE CONSUMO (
     FOREIGN KEY (ID_FORMA_PAGAMENTO)
         REFERENCES FORMA_PAGAMENTO(ID_FORMA_PAGAMENTO)
 );
-```
 
----
+-- =====================================================
+-- TABELA CONSUMO_PRODUTO
+-- =====================================================
 
-## Tabela CONSUMO_PRODUTO
-
-```sql
 CREATE TABLE CONSUMO_PRODUTO (
     ID_PRODUTO INT NOT NULL,
     ID_CONSUMO INT NOT NULL,
@@ -209,13 +186,11 @@ CREATE TABLE CONSUMO_PRODUTO (
     FOREIGN KEY (ID_CONSUMO)
         REFERENCES CONSUMO(ID_CONSUMO)
 );
-```
 
----
+-- =====================================================
+-- TABELA AUDIT_LOG
+-- =====================================================
 
-## Tabela AUDIT_LOG
-
-```sql
 CREATE TABLE AUDIT_LOG (
     ID_AUDIT INT PRIMARY KEY AUTO_INCREMENT,
     DATA_HORA DATETIME NOT NULL,
@@ -232,4 +207,3 @@ CREATE TABLE AUDIT_LOG (
     FOREIGN KEY (ID_CLIENTE)
         REFERENCES CLIENTE(ID_CLIENTE)
 );
-```
