@@ -54,13 +54,13 @@ Entidade de segurança responsável pelo rastreamento de ações realizadas no s
 
 # MODELAGEM CONCEITUAL (DER)
 
-![DER](./imagens/modelo_der.jpeg)
+![MODELAGEM CONCEITUAL DER](./imagens/MODELO_DER.jpeg)
 
 ---
 
 # MODELAGEM LÓGICA (TABELA)
 
-![Modelo Lógico](./imagens/modelo_lógico.png)
+![MODELAGEM LÓGICA](./imagens/Modelo_Lógico.png)
 
 # Normalização do Banco de Dados
 
