@@ -9,12 +9,38 @@ ADS2N
 - João Vitor Santos Silva
 - Elton da Silva Soares de Souza
 
+  ---
+
+# Índice
+
+- [Domínio e Contexto do Negócio](#domínio-e-contexto-do-negócio)
+- [Descrição das Entidades](#descrição-das-entidades)
+- [Modelagem Conceitual (DER)](#modelagem-conceitual-der)
+- [Modelagem Lógica](#modelagem-lógica-tabela)
+- [Normalização do Banco de Dados](#normalização-do-banco-de-dados)
+- [Estrutura Física do Banco de Dados (DDL)](#estrutura-física-do-banco-de-dados-ddl)
+
+---
+
 # Domínio e Contexto do Negócio
 
-O sistema foi projetado para gerenciar as operações diárias de uma Lan House.
-Este estabelecimento foca na conveniência e acessibilidade.
-- O negócio sobrevive da venda de horas de internet, serviços de impressão e a organização de torneios que movimentam a comunidade.
-- O contexto exige um controle rigoroso de quem está usando cada máquina, o que estão consumindo (balas, refrigerantes, salgadinhos) e quem está devidamente inscrito nos torneios da casa. 
+O sistema foi projetado para gerenciar as operações diárias de uma Lan House, focando em conveniência, acessibilidade e organização dos serviços oferecidos.
+
+O negócio funciona principalmente através de:
+
+- Venda de horas de uso dos computadores;
+- Serviços de impressão;
+- Comercialização de produtos;
+- Organização de torneios gamers.
+
+O sistema mantém controle sobre:
+
+- Utilização das máquinas;
+- Consumo realizado pelos clientes;
+- Participação em torneios;
+- Registros de auditoria e segurança.
+
+---
 
 # Descrição das Entidades
 	
@@ -103,3 +129,13 @@ Dessa forma:
 O script SQL completo responsável pela criação do banco de dados e das tabelas do sistema pode ser encontrado no arquivo abaixo:
 
 [DDL.sql](./database/DDL.sql)
+
+---
+
+# Tecnologias Utilizadas
+
+- MySQL
+- MySQL Workbench
+- brModelo
+- GitHub
+- Figma
