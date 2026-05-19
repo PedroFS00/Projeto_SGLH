@@ -132,7 +132,7 @@ O script SQL completo responsável pela criação do banco de dados e das tabela
 
 ---
 
-# Tecnologias Utilizadas
+# Ferramentas Utilizadas
 
 - MySQL
 - MySQL Workbench
