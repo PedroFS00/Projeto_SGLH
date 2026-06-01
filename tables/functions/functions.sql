@@ -1,4 +1,4 @@
---FN DURAÇÃO MINUTOS
+--FUNCTION DURAÇÃO
 
 DELIMITER //
 
@@ -14,9 +14,9 @@ END //
 
 DELIMITER ;
 
-============================================
+===========================================
 
---FN CALCULAR VALOR
+--FUNCTION CALCULAR VALOR
 
 DELIMITER //
 
@@ -39,5 +39,3 @@ BEGIN
 END //
 
 DELIMITER ;
-
-============================================
