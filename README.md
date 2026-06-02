@@ -2,7 +2,7 @@
 Projeto destinado a disciplina de Banco de Dados, onde vamos trabalhar um Sistema de Gerenciamento de uma Lan House.
 
 ## TURMA
-ADS2N
+ADS2NOITE
 
 ## AUTORES
 - Pedro Caio Francisco da Silva
