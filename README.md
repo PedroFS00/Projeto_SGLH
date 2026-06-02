@@ -18,7 +18,6 @@ ADS2N
 - [Modelagem Conceitual (DER)](#modelagem-conceitual-der)
 - [Modelagem Lógica](#modelagem-lógica-tabela)
 - [Normalização do Banco de Dados](#normalização-do-banco-de-dados)
-- [Estrutura Física do Banco de Dados (DDL)](#estrutura-física-do-banco-de-dados-ddl)
 
 ---
 
@@ -86,7 +85,7 @@ Entidade de segurança responsável pelo rastreamento de ações realizadas no s
 
 # MODELAGEM LÓGICA (TABELA)
 
-![MODELAGEM LÓGICA](./imagens/Modelo_Lógico.png)
+![MODELAGEM LÓGICA](./imagens/modelo-logico.png)
 
 # Normalização do Banco de Dados
 
@@ -124,18 +123,10 @@ Dessa forma:
 
 ---
 
-# Estrutura Física do Banco de Dados (DDL)
-
-O script SQL completo responsável pela criação do banco de dados e das tabelas do sistema pode ser encontrado no arquivo abaixo:
-
-[DDL.sql](./database/DDL.sql)
-
----
-
 # Ferramentas Utilizadas
 
 - MySQL
 - MySQL Workbench
 - brModelo
 - GitHub
-- Figma
+- Docker
