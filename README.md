@@ -79,7 +79,7 @@ Entidade de segurança responsável pelo rastreamento de ações realizadas no s
 
 # MODELAGEM CONCEITUAL (DER)
 
-![MODELAGEM CONCEITUAL DER](./imagens/MODELO_DER.jpeg)
+![MODELAGEM CONCEITUAL DER](./imagens/modelo-der.png)
 
 ---
 
